@@ -1,0 +1,118 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt02107
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt02107
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: control1.html 2654 2010-03-28 13:48:03Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{* assigns for tests only
+<{assign var=ixt_canvas_left value=""}>
+<{assign var=ixt_canvas_right value=""}>
+*}>
+<{if !(($ixt_canvas_left == '') && ($ixt_canvas_right == ''))}>
+ <{if isset($ixt_ctrl1) && ($ixt_ctrl1 == "yes")}>
+  <style>
+   .ixt-ctrl1 { position: relative; height: 28px; z-index: 9; }
+   /* sorry but opacity not work on IE
+   .ixt-ctrl1-left, .ixt-ctrl1-right { position:absolute; width:100px; cursor:pointer; z-index:2; filter: alpha(opacity=80); -moz-opacity:0.8; opacity:0.8;}
+   */
+   .ixt-ctrl1-left, .ixt-ctrl1-right { position:absolute; width:100px; cursor:pointer; z-index:2; }
+   .ixt-ctrl1-left { left:-10px; text-align:left; }
+   .ixt-ctrl1-right { right:-10px; text-align:right; }
+  </style>
+  
+  <script type="text/javascript">
+  /* start show/hide sidebar */
+   function ixtToggleSidebar( id )
+    {
+     var id0 = 'ixt-content';
+     var id1 = (id == '1') ? 'ixt-sidebar1' : 'ixt-sidebar2';
+     var id2 = (id == '1') ? 'ixt-sidebar2' : 'ixt-sidebar1';
+     var w0 = '59.9%'; /* .ixt-contentLayout #ixt-content */
+     var w1 = '79.9%'; /* .ixt-contentLayout #ixt-content-sidebar1 */
+     var w2 = '79.9%'; /* .ixt-contentLayout #ixt-content-sidebar2 */
+     var w3 = '100%'; /* .ixt-contentLayout #ixt-content-wide */
+     var ontxt = 'show';
+     var offtxt = 'hide';
+     var contwidth = w0;
+     var ctrltext = document.getElementById(id1+'-ctrl');
+     var value = (document.getElementById(id1).style.display == 'none') ? 'block' : 'none';
+     var blcon = '<{$ixt_blconcat}>';
+     var canleft = '<{$ixt_canvas_left}>';
+     var canright = '<{$ixt_canvas_right}>';
+     
+     if (blcon == 'rl' || canleft == '')
+     {
+      id0 = 'ixt-content-sidebar1';
+     } else {
+      if (blcon == 'lr' || canright == '')	{ id0 = 'ixt-content-sidebar2'; }
+     }
+     if (value == 'none') /* sidebar1 hide */
+     {
+      ctrltext.value = ontxt;
+      if (document.getElementById(id2)) /* sidebar1 hide sidebar2 yes */
+      {
+       if (document.getElementById(id2).style.display == 'none') /* sidebar1 hide sidebar2 hide */
+       {
+        contwidth = w3;
+       } else { /* sidebar1 hide sidebar2 show */
+        contwidth = (id == '1') ? w1 : w2;
+       }
+      } else { /* sidebar1 hide and sidebar2 none == content 100% */
+       contwidth = w3;
+      }
+     } else { /* sidebar1 show */
+      ctrltext.value = offtxt;
+      if (document.getElementById(id2)) /* sidebar1 show and sidebar2 yes */
+      {
+       if (document.getElementById(id2).style.display == 'none') /* sidebar1 show and sidebar2 hide */
+       {
+        contwidth = (id == '1') ? w2 : w1;
+       } else { /* sidebar1 show and sidebar2 show */
+        contwidth = w0;
+       }
+      } else { /* sidebar1 show and sidebar2 none */
+       contwidth = w2;
+      }
+     }
+     ixtSetWidth( id0, contwidth );
+     ixtSetDisplay( id1, value );
+    }
+  
+   function ixtSetWidth( id, value )
+    {
+     document.getElementById(id).style.width = value;
+    }
+ 
+   function ixtSetDisplay( id, value )
+    {
+     document.getElementById(id).style.display = value;
+    }
+  /* end show/hide sidebar */
+  </script>
+  
+  <div class="ixt-ctrl1">
+   <{if (($ixt_rtl && $ixt_canvas_right) || (!$ixt_rtl && $ixt_canvas_left)) && !($ixt_blconcat == "rl")}>
+     <div class="ixt-ctrl1-left">
+      <span class="ixt-button-wrapper">
+       <span class="l"></span><span class="r"></span>
+       <input name="ixt-sidebar1-ctrl" id="ixt-sidebar1-ctrl" type="submit" class="ixt-button" onclick='ixtToggleSidebar(1);' value='hide' />
+      </span>
+     </div>
+   <{/if}>
+   <{if (($ixt_rtl && $ixt_canvas_left) || (!$ixt_rtl && $ixt_canvas_right)) && !($ixt_blconcat == "lr")}>
+     <div class="ixt-ctrl1-right">
+      <span class="ixt-button-wrapper">
+       <span class="l"></span><span class="r"></span>
+       <input name="ixt-sidebar2-ctrl" id="ixt-sidebar2-ctrl" type="submit" class="ixt-button" onclick='ixtToggleSidebar(2);' value='hide' />
+      </span>
+     </div>
+   <{/if}>
+  </div>
+ <{/if}>
+<{/if}>

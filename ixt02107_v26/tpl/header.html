@@ -1,0 +1,45 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt02107
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt02107
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: header.html 2654 2010-03-28 13:48:03Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<!-- Theme created with IXThemes Theme Framework and based on ixt02107, http://ixthemes.org, support@ixthemes.org -->
+<div class="ixt-Header">
+ <div class="ixt-Header-png"></div><div class="ixt-Header-jpeg"></div>
+ <{if isset($ixt_headerrss) && ($ixt_headerrss == "yes")}>
+  <div class="ixt-Header-rss"><a href="<{$ixt_url}>/backend.php" class="ixt-Header-rssicon" title="RSS"></a></div>
+ <{/if}>
+ <{if isset($ixt_extheader) && ($ixt_extheader == "yes")}>
+  <div class="ixt-extheader">
+   <{includeq file="$theme_tpl/header_ext.html"}>
+  </div>
+  <{if !(isset($ixt_preheader) && ($ixt_preheader == "yes"))}>
+   <div class="ixt-logoban1">
+    <div class="ixt-Logo-image"><a href="<{$ixt_url}>/" title="<{$ixt_sitename}>"><img src="<{xoAppUrl /images/logo.png}>" height="51px" alt="<{$ixt_sitename}>" /></a></div>
+    <div style="position:absolute; bottom:0px; padding-bottom:5px;">
+    <{includeq file="$theme_tpl/banner.html"}>
+    </div>
+   </div>
+  <{else }>
+   <div class="ixt-logoban2">
+    <div class="ixt-Logo-image"><a href="<{$ixt_url}>/" title="<{$ixt_sitename}>"><img src="<{xoAppUrl /images/logo.png}>" height="51px" alt="<{$ixt_sitename}>" /></a></div>
+   </div>
+  <{/if}>
+ <{else }>
+  <div class="ixt-Logo">
+   <div class="ixt-Logo-image"><a href="<{$ixt_url}>/" title="<{$ixt_sitename}>"><img src="<{xoAppUrl /images/logo.png}>" height="51px" alt="<{$ixt_sitename}>" /></a></div>
+  </div>
+  <{if !(isset($ixt_preheader) && ($ixt_preheader == "yes"))}>
+   <div class="ixt-logoban0">
+    <{includeq file="$theme_tpl/banner.html"}>
+   </div>
+  <{/if}>
+ <{/if}>
+</div>

@@ -1,0 +1,183 @@
+<{*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt02107
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt02107
+* @version		     $Id: slides.html 2654 2010-03-28 13:48:03Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*}>
+<{if isset($ixt_slides) && ($ixt_slides == "yes")}>
+ <{if $xoops_dirname == "system"}>
+  <!-- slides on homepage and system pages only -->
+  <!-- width adjust 960px, 970px, 980px-->
+  <style>
+  .ixt-slides { position:relative;top: 0; left: -24px;}
+  .ixt-slides ul{  list-style-type: none; height:270px; overflow:hidden; width:980px; position:relative; }
+  .ixt-slides ul li{ margin-left:0px; float:left; width:980px; height:270px; padding:0px;}
+  .ixt-slides ul li .ixt-slide-info{ float:left; width:335px; padding:0px; }
+  .ixt-slides ul li .ixt-slide-image{ background:none; float:right; width:615px; height:254px; position:relative; overflow:hidden; font-size:0; line-height:0; padding:10px 0 0 0;}
+  .ixt-slides p { padding-bottom:15px; padding-left:17px; }
+  .ixt-slides .ixt-slidesbutton p { text-align:center; padding-left:0px; padding-right:0px; }
+  .jcarousel-clip { width:980px; height:270px; overflow:hidden; position:relative;}
+  .jcarousel-list {z-index: 1; overflow: hidden; margin:0;}
+  .jcarousel-container { width:980px; position:relative; padding-top:12px; padding-left:24px;}
+  .jcarousel-prev, .jcarousel-next { font-size:0; line-height:0; width:49px; height:49px; cursor:pointer; position:absolute; top:106px; z-index:2;}
+  .jcarousel-prev { left:9px; background:url('<{xoImgUrl img/slides/prev-button.png}>'); }
+  .jcarousel-next { right:2px; /*right:-20px;*/ background:url('<{xoImgUrl img/slides/next-button.png}>'); }
+  </style>
+  <script type="text/javascript">
+  jQuery.easing['BounceEaseOut'] = function(p, t, b, c, d) {
+   if ((t/=d) < (1/2.75)) {
+    return c*(7.5625*t*t) + b;
+   } else if (t < (2/2.75)) {
+    return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+   } else if (t < (2.5/2.75)) {
+    return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+   } else {
+    return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+   }
+  };
+  jQuery(document).ready(function() { jQuery('.ixt-slides').jcarousel({	scroll:1, wrap:'both', easing:'BounceEaseOut', animation:1000 }); });
+  </script>
+  
+  <div class="ixt-slides">
+   <ul>
+    <li>
+     <div class="ixt-slide-info">
+      <div class="ixt-Block">
+       <div class="ixt-Block-tl"></div><div class="ixt-Block-tr"></div><div class="ixt-Block-bl"></div><div class="ixt-Block-br"></div><div class="ixt-Block-tc"></div><div class="ixt-Block-bc"></div><div class="ixt-Block-cl"></div><div class="ixt-Block-cr"></div><div class="ixt-Block-cc"></div>
+       <div class="ixt-Block-body">
+        <div class="ixt-BlockContent">
+         <div class="ixt-BlockContent-tl"></div><div class="ixt-BlockContent-tr"></div><div class="ixt-BlockContent-bl"></div><div class="ixt-BlockContent-br"></div><div class="ixt-BlockContent-tc"></div><div class="ixt-BlockContent-bc"></div><div class="ixt-BlockContent-cl"></div><div class="ixt-BlockContent-cr"></div><div class="ixt-BlockContent-cc"></div>
+         <div class="ixt-BlockContent-body"> 
+          <h3>What is IXThemes?</h3>
+          <p>&nbsp;</p>
+          <p>
+           IXThemes is an implementation of innovative methods in the development of qualitative universality themes and templates for content management systems based on the XOOPS Web application platform.
+          </p>
+          <p class="slidesbutton">
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="Get XOOPS" class="ixt-button" onclick="location='http://xoops.org/index.php'" />
+           </span>
+           &nbsp;&nbsp;
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="FREE Themes" class="ixt-button" onclick="location='http://ixthemes.com/index.php'" />
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>	
+     </div>
+     <div class="ixt-slide-image">
+      <a href="http://ixthemes.org" target="_self"><img src="<{xoImgUrl /img/slides/slide001.png}>" alt="" /></a>
+     </div>
+    </li>
+    <li>
+     <div class="ixt-slide-info">
+      <div class="ixt-Block">
+       <div class="ixt-Block-tl"></div><div class="ixt-Block-tr"></div><div class="ixt-Block-bl"></div><div class="ixt-Block-br"></div><div class="ixt-Block-tc"></div><div class="ixt-Block-bc"></div><div class="ixt-Block-cl"></div><div class="ixt-Block-cr"></div><div class="ixt-Block-cc"></div>
+       <div class="ixt-Block-body">
+        <div class="ixt-BlockContent">
+         <div class="ixt-BlockContent-tl"></div><div class="ixt-BlockContent-tr"></div><div class="ixt-BlockContent-bl"></div><div class="ixt-BlockContent-br"></div><div class="ixt-BlockContent-tc"></div><div class="ixt-BlockContent-bc"></div><div class="ixt-BlockContent-cl"></div><div class="ixt-BlockContent-cr"></div><div class="ixt-BlockContent-cc"></div>
+         <div class="ixt-BlockContent-body"> 
+          <h3>What is XOOPS?</h3>
+          <p>&nbsp;</p>
+          <p>
+           XOOPS is an extensible, OO (Object Oriented), easy to use dynamic web content management system written in PHP. XOOPS is the ideal tool for developing small to large dynamic community websites, intra company portals, corporate portals.
+          </p>
+          <p class="slidesbutton">
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="Get XOOPS" class="ixt-button" onclick="location='http://xoops.org/index.php'" />
+           </span>
+           &nbsp;&nbsp;
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="FREE Themes" class="ixt-button" onclick="location='http://ixthemes.com/index.php'" />
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>	
+     </div>
+     <div class="ixt-slide-image">
+      <a href="http://ixthemes.org" target="_self"><img src="<{xoImgUrl /img/slides/slide002.png}>" alt="" /></a>
+     </div>
+    </li>
+    <li>
+     <div class="ixt-slide-info">
+      <div class="ixt-Block">
+       <div class="ixt-Block-tl"></div><div class="ixt-Block-tr"></div><div class="ixt-Block-bl"></div><div class="ixt-Block-br"></div><div class="ixt-Block-tc"></div><div class="ixt-Block-bc"></div><div class="ixt-Block-cl"></div><div class="ixt-Block-cr"></div><div class="ixt-Block-cc"></div>
+       <div class="ixt-Block-body">
+        <div class="ixt-BlockContent">
+         <div class="ixt-BlockContent-tl"></div><div class="ixt-BlockContent-tr"></div><div class="ixt-BlockContent-bl"></div><div class="ixt-BlockContent-br"></div><div class="ixt-BlockContent-tc"></div><div class="ixt-BlockContent-bc"></div><div class="ixt-BlockContent-cl"></div><div class="ixt-BlockContent-cr"></div><div class="ixt-BlockContent-cc"></div>
+         <div class="ixt-BlockContent-body"> 
+          <h3>What is IXThemes?</h3>
+          <p>&nbsp;</p>
+          <p>
+           IXThemes is an implementation of innovative methods in the development of qualitative universality themes and templates for content management systems based on the XOOPS Web application platform.
+          </p>
+          <p class="slidesbutton">
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="Get XOOPS" class="ixt-button" onclick="location='http://xoops.org/index.php'" />
+           </span>
+           &nbsp;&nbsp;
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="FREE Themes" class="ixt-button" onclick="location='http://ixthemes.com/index.php'" />
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>	
+     </div>
+     <div class="ixt-slide-image">
+      <a href="http://ixthemes.org" target="_self"><img src="<{xoImgUrl /img/slides/slide003.png}>" alt="" /></a>
+     </div>
+    </li>
+    <li>
+     <div class="ixt-slide-info">
+      <div class="ixt-Block">
+       <div class="ixt-Block-tl"></div><div class="ixt-Block-tr"></div><div class="ixt-Block-bl"></div><div class="ixt-Block-br"></div><div class="ixt-Block-tc"></div><div class="ixt-Block-bc"></div><div class="ixt-Block-cl"></div><div class="ixt-Block-cr"></div><div class="ixt-Block-cc"></div>
+       <div class="ixt-Block-body">
+        <div class="ixt-BlockContent">
+         <div class="ixt-BlockContent-tl"></div><div class="ixt-BlockContent-tr"></div><div class="ixt-BlockContent-bl"></div><div class="ixt-BlockContent-br"></div><div class="ixt-BlockContent-tc"></div><div class="ixt-BlockContent-bc"></div><div class="ixt-BlockContent-cl"></div><div class="ixt-BlockContent-cr"></div><div class="ixt-BlockContent-cc"></div>
+         <div class="ixt-BlockContent-body"> 
+          <h3>What is XOOPS?</h3>
+          <p>&nbsp;</p>
+          <p>
+           XOOPS is an extensible, OO (Object Oriented), easy to use dynamic web content management system written in PHP. XOOPS is the ideal tool for developing small to large dynamic community websites, intra company portals, corporate portals.
+          </p>
+          <p style="text-align:center; padding-left:0px; padding-right:0px;">
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="Get XOOPS" class="ixt-button" onclick="location='http://xoops.org/index.php'" />
+           </span>
+           &nbsp;&nbsp;
+           <span class="ixt-button-wrapper">
+            <span class="l"></span><span class="r"></span>
+            <input type="submit" name="slidelink" value="FREE Themes" class="ixt-button" onclick="location='http://ixthemes.com/index.php'" />
+           </span>
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>	
+     </div>
+     <div class="ixt-slide-image">
+      <a href="http://ixthemes.org" target="_self"><img src="<{xoImgUrl /img/slides/slide004.png}>" alt="" /></a>
+     </div>
+    </li>
+   </ul>			
+  </div>			
+ <{/if}>
+<{/if}>

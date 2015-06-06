@@ -1,0 +1,629 @@
+/*
+* Qualitative Themes for XOOPS
+*
+* @license       http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License (GPL)
+* @project       IXThemes Project, http://ixthemes.org
+* @theme_name    ixt02107
+* @theme_demo    http://ixthemes.sourceforge.net/demo/x/index.php?xoops_theme_select=ixt02107
+* @theme_author  Alexander Galochkin (algalochkin at users.sourceforge.net)
+* @version       $Id: style.ie6.css 2654 2010-03-28 13:48:03Z algalochkin $
+*
+* Thanks you, that you have left this header untouched!!!
+*/
+/* begin Page */
+#ixt-page-background-glare-image { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+GetStyleUrl()+"../img/Page-BgGlare.jpg',sizingMethod='crop')");
+}
+img { filter:expression(fixPNG(this)); }
+/* end Page */
+
+/* begin Box, Sheet */
+.ixt-Sheet, .ixt-Sheet-body { zoom:1; }
+.ixt-Sheet-body { position:static; }
+#ixt-page-background-simple-gradient, #ixt-page-background-gradient, #ixt-page-background-glare {  width:expression(document.body.clientWidth > 1000 ? "100%" : "1000px");
+}
+/* end Box, Sheet */
+
+/* begin Menu */
+
+.ixt-menu ul { height: 1%; width:1px; }
+.ixt-menu, .ixt-menu ul { height: 1%; }
+.ixt-menu li.ixt-menuhover { z-index: 10000; }
+.ixt-menu .ixt-menuhoverUL { visibility: visible; }
+.ixt-menu .ixt-menuhoverUL { top: 100%; left: 0; }
+.ixt-menu .ixt-menuhoverUL .ixt-menuhoverUL { top: 0; left: 100%; }
+.ixt-menu ul a { height: 1%; }
+.ixt-menu li li { float: left; width: 100%; }
+.ixt-menu .ixt-menuhoverUL .ixt-menuhoverUL { top: 5px; left: 100%; }
+.ixt-menu, .ixt-menu ul { height: 1%; }
+.ixt-menu li.ixt-menuhover { z-index: 10000; }
+.ixt-menu .ixt-menuhoverUL { visibility: visible; }
+.ixt-menu .ixt-menuhoverUL { top: 100%; left: 0; }
+.ixt-menu .ixt-menuhoverUL .ixt-menuhoverUL { top: 0; left: 100%; }
+.ixt-menu ul a { height: 1%; }
+.ixt-menu li li { float: left; width: 100%; }
+.ixt-nav { zoom: 1; }
+.ixt-nav .l, .ixt-nav .r { font-size: 1px; background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/nav.png',sizingMethod='crop')");
+}
+.ixt-nav .l {  width: expression(this.parentNode.offsetWidth-0+'px');
+}
+.ixt-nav .r {
+ left: expression(this.parentNode.offsetWidth-960+'px'); clip: rect(auto auto auto 960px); }
+/* end Menu */
+
+/* begin MenuItem */
+.ixt-menu a { float:left; }
+.ixt-menu a:hover { visibility:visible; }
+.ixt-menu a .r, .ixt-menu a .l { font-size:1px; background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/MenuItem.png',sizingMethod='crop')");
+}
+.ixt-menu a .r {
+ left: expression(this.parentNode.offsetWidth-422+'px'); clip: rect(auto auto auto 411px); }
+.ixt-menu a .l {  width: expression(this.parentNode.offsetWidth-11+'px');
+}
+.ixt-menuhover .ixt-menuhoverA .t { color: #D15E47; }
+.ixt-menuhover .ixt-menuhoverA .l, .ixt-menuhover .ixt-menuhoverA .r { top: -26px; }
+/* end MenuItem */
+
+/* begin MenuSubItem */
+
+.ixt-menu ul a { color: #EDF4EB !important; }
+.ixt-menu ul a:hover { color: #D15E47 !important; }
+.ixt-menu ul .ixt-menuhover .ixt-menuhoverA { color: #D15E47 !important; background-position: 0 -20px; }
+.ixt-nav .ixt-menu ul a:hover span, .ixt-nav .ixt-menu ul a:hover span span { color: #D15E47 !important; }
+.ixt-nav .ixt-menu ul .ixt-menuhover .ixt-menuhoverA span, .ixt-nav .ixt-menu ul .ixt-menuhover .ixt-menuhoverA span span { color: #D15E47 !important; }
+/* end MenuSubItem */
+
+/* begin Header */
+div.ixt-Header-png { font-size: 1px; background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/Header.png',sizingMethod='crop')");
+}
+.ixt-Header-rssicon { zoom:1; font-size:1px; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/toprssicon.png',sizingMethod='crop')");
+}
+/* end Header */
+
+/* begin Box, Block */
+.ixt-Block, .ixt-Block-body { zoom:1; }
+.ixt-Block-body { position:static; }
+.ixt-Block1, .ixt-Block1-body { zoom:1; }
+.ixt-Block1-body { position:static; }
+.ixt-Block2, .ixt-Block2-body { zoom:1; }
+.ixt-Block2-body { position:static; }
+.ixt-Block3, .ixt-Block3-body { zoom:1; }
+.ixt-Block3-body { position:static; }
+.ixt-Block4, .ixt-Block4-body { zoom:1; }
+.ixt-Block4-body { position:static; }
+.ixt-Block5, .ixt-Block5-body { zoom:1; }
+.ixt-Block5-body { position:static; }
+.ixt-Block6, .ixt-Block6-body { zoom:1; }
+.ixt-Block6-body { position:static; }
+.ixt-Block7, .ixt-Block7-body { zoom:1; }
+.ixt-Block7-body { position:static; }
+.ixt-Block8, .ixt-Block8-body { zoom:1; }
+.ixt-Block8-body { position:static; }
+.ixt-Block9, .ixt-Block9-body { zoom:1; }
+.ixt-Block9-body { position:static; }
+.ixt-Block10, .ixt-Block10-body { zoom:1; }
+.ixt-Block10-body { position:static; }
+.ixt-Block11, .ixt-Block11-body { zoom:1; }
+.ixt-Block11-body { position:static; }
+.ixt-Block12, .ixt-Block12-body { zoom:1; }
+.ixt-Block12-body { position:static; }
+.ixt-Block999, .ixt-Block999-body { zoom:1; }
+.ixt-Block999-body { position:static; }
+/* end Box, Block */
+
+/* begin BlockHeader */
+.ixt-BlockHeader, .ixt-BlockHeader { font-size: 1px; }
+.ixt-BlockHeader .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader1, .ixt-BlockHeader1 { font-size: 1px; }
+.ixt-BlockHeader1 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader2, .ixt-BlockHeader2 { font-size: 1px; }
+.ixt-BlockHeader2 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader3, .ixt-BlockHeader3 { font-size: 1px; }
+.ixt-BlockHeader3 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader4, .ixt-BlockHeader4 { font-size: 1px; }
+.ixt-BlockHeader4 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader5, .ixt-BlockHeader5 { font-size: 1px; }
+.ixt-BlockHeader5 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader6, .ixt-BlockHeader6 { font-size: 1px; }
+.ixt-BlockHeader6 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader7, .ixt-BlockHeader7 { font-size: 1px; }
+.ixt-BlockHeader7 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader8, .ixt-BlockHeader8 { font-size: 1px; }
+.ixt-BlockHeader8 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader9, .ixt-BlockHeader9 { font-size: 1px; }
+.ixt-BlockHeader9 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader10, .ixt-BlockHeader10 { font-size: 1px; }
+.ixt-BlockHeader10 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader11, .ixt-BlockHeader11 { font-size: 1px; }
+.ixt-BlockHeader11 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader12, .ixt-BlockHeader12 { font-size: 1px; }
+.ixt-BlockHeader12 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+.ixt-BlockHeader999, .ixt-BlockHeader999 { font-size: 1px; }
+.ixt-BlockHeader999 .ixt-header-tag-icon { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockHeaderIcon.png',sizingMethod='crop')");
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.ixt-BlockContent, .ixt-BlockContent-body { zoom:1; }
+.ixt-BlockContent-body { position:static; }
+.ixt-BlockContent-tr, .ixt-BlockContent-tl, .ixt-BlockContent-br, .ixt-BlockContent-bl, .ixt-BlockContent-tc, .ixt-BlockContent-bc, .ixt-BlockContent-cr, .ixt-BlockContent-cl { font-size: 1px; background: none; }
+.ixt-BlockContent-tr, .ixt-BlockContent-tl, .ixt-BlockContent-br, .ixt-BlockContent-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent-tc, .ixt-BlockContent-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent-cr, .ixt-BlockContent-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent1, .ixt-BlockContent1-body { zoom:1; }
+.ixt-BlockContent1-body { position:static; }
+.ixt-BlockContent1-tr, .ixt-BlockContent1-tl, .ixt-BlockContent1-br, .ixt-BlockContent1-bl, .ixt-BlockContent1-tc, .ixt-BlockContent1-bc, .ixt-BlockContent1-cr, .ixt-BlockContent1-cl { font-size: 1px; background: none; }
+.ixt-BlockContent1-tr, .ixt-BlockContent1-tl, .ixt-BlockContent1-br, .ixt-BlockContent1-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent1-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent1-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent1-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent1-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent1-tc, .ixt-BlockContent1-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent1-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent1-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent1-cr, .ixt-BlockContent1-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent1-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent1-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent1-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent2, .ixt-BlockContent2-body { zoom:1; }
+.ixt-BlockContent2-body { position:static; }
+.ixt-BlockContent2-tr, .ixt-BlockContent2-tl, .ixt-BlockContent2-br, .ixt-BlockContent2-bl, .ixt-BlockContent2-tc, .ixt-BlockContent2-bc, .ixt-BlockContent2-cr, .ixt-BlockContent2-cl { font-size: 1px; background: none; }
+.ixt-BlockContent2-tr, .ixt-BlockContent2-tl, .ixt-BlockContent2-br, .ixt-BlockContent2-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent2-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent2-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent2-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent2-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent2-tc, .ixt-BlockContent2-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent2-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent2-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent2-cr, .ixt-BlockContent2-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent2-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent2-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent2-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent3, .ixt-BlockContent3-body { zoom:1; }
+.ixt-BlockContent3-body { position:static; }
+.ixt-BlockContent3-tr, .ixt-BlockContent3-tl, .ixt-BlockContent3-br, .ixt-BlockContent3-bl, .ixt-BlockContent3-tc, .ixt-BlockContent3-bc, .ixt-BlockContent3-cr, .ixt-BlockContent3-cl { font-size: 1px; background: none; }
+.ixt-BlockContent3-tr, .ixt-BlockContent3-tl, .ixt-BlockContent3-br, .ixt-BlockContent3-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent3-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent3-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent3-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent3-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent3-tc, .ixt-BlockContent3-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent3-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent3-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent3-cr, .ixt-BlockContent3-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent3-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent3-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent3-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent4, .ixt-BlockContent4-body { zoom:1; }
+.ixt-BlockContent4-body { position:static; }
+.ixt-BlockContent4-tr, .ixt-BlockContent4-tl, .ixt-BlockContent4-br, .ixt-BlockContent4-bl, .ixt-BlockContent4-tc, .ixt-BlockContent4-bc, .ixt-BlockContent4-cr, .ixt-BlockContent4-cl { font-size: 1px; background: none; }
+.ixt-BlockContent4-tr, .ixt-BlockContent4-tl, .ixt-BlockContent4-br, .ixt-BlockContent4-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent4-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent4-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent4-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent4-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent4-tc, .ixt-BlockContent4-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent4-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent4-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent4-cr, .ixt-BlockContent4-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent4-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent4-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent4-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent5, .ixt-BlockContent5-body { zoom:1; }
+.ixt-BlockContent5-body { position:static; }
+.ixt-BlockContent5-tr, .ixt-BlockContent5-tl, .ixt-BlockContent5-br, .ixt-BlockContent5-bl, .ixt-BlockContent5-tc, .ixt-BlockContent5-bc, .ixt-BlockContent5-cr, .ixt-BlockContent5-cl { font-size: 1px; background: none; }
+.ixt-BlockContent5-tr, .ixt-BlockContent5-tl, .ixt-BlockContent5-br, .ixt-BlockContent5-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent5-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent5-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent5-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent5-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent5-tc, .ixt-BlockContent5-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent5-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent5-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent5-cr, .ixt-BlockContent5-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent5-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent5-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent5-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent6, .ixt-BlockContent6-body { zoom:1; }
+.ixt-BlockContent6-body { position:static; }
+.ixt-BlockContent6-tr, .ixt-BlockContent6-tl, .ixt-BlockContent6-br, .ixt-BlockContent6-bl, .ixt-BlockContent6-tc, .ixt-BlockContent6-bc, .ixt-BlockContent6-cr, .ixt-BlockContent6-cl { font-size: 1px; background: none; }
+.ixt-BlockContent6-tr, .ixt-BlockContent6-tl, .ixt-BlockContent6-br, .ixt-BlockContent6-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent6-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent6-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent6-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent6-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent6-tc, .ixt-BlockContent6-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent6-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent6-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent6-cr, .ixt-BlockContent6-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent6-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent6-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent6-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent7, .ixt-BlockContent7-body { zoom:1; }
+.ixt-BlockContent7-body { position:static; }
+.ixt-BlockContent7-tr, .ixt-BlockContent7-tl, .ixt-BlockContent7-br, .ixt-BlockContent7-bl, .ixt-BlockContent7-tc, .ixt-BlockContent7-bc, .ixt-BlockContent7-cr, .ixt-BlockContent7-cl { font-size: 1px; background: none; }
+.ixt-BlockContent7-tr, .ixt-BlockContent7-tl, .ixt-BlockContent7-br, .ixt-BlockContent7-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent7-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent7-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent7-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent7-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent7-tc, .ixt-BlockContent7-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent7-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent7-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent7-cr, .ixt-BlockContent7-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent7-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent7-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent7-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent8, .ixt-BlockContent8-body { zoom:1; }
+.ixt-BlockContent8-body { position:static; }
+.ixt-BlockContent8-tr, .ixt-BlockContent8-tl, .ixt-BlockContent8-br, .ixt-BlockContent8-bl, .ixt-BlockContent8-tc, .ixt-BlockContent8-bc, .ixt-BlockContent8-cr, .ixt-BlockContent8-cl { font-size: 1px; background: none; }
+.ixt-BlockContent8-tr, .ixt-BlockContent8-tl, .ixt-BlockContent8-br, .ixt-BlockContent8-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent8-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent8-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent8-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent8-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent8-tc, .ixt-BlockContent8-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent8-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent8-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent8-cr, .ixt-BlockContent8-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent8-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent8-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent8-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent9, .ixt-BlockContent9-body { zoom:1; }
+.ixt-BlockContent9-body { position:static; }
+.ixt-BlockContent9-tr, .ixt-BlockContent9-tl, .ixt-BlockContent9-br, .ixt-BlockContent9-bl, .ixt-BlockContent9-tc, .ixt-BlockContent9-bc, .ixt-BlockContent9-cr, .ixt-BlockContent9-cl { font-size: 1px; background: none; }
+.ixt-BlockContent9-tr, .ixt-BlockContent9-tl, .ixt-BlockContent9-br, .ixt-BlockContent9-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent9-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent9-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent9-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent9-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent9-tc, .ixt-BlockContent9-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent9-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent9-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent9-cr, .ixt-BlockContent9-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent9-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent9-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent9-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent10, .ixt-BlockContent10-body { zoom:1; }
+.ixt-BlockContent10-body { position:static; }
+.ixt-BlockContent10-tr, .ixt-BlockContent10-tl, .ixt-BlockContent10-br, .ixt-BlockContent10-bl, .ixt-BlockContent10-tc, .ixt-BlockContent10-bc, .ixt-BlockContent10-cr, .ixt-BlockContent10-cl { font-size: 1px; background: none; }
+.ixt-BlockContent10-tr, .ixt-BlockContent10-tl, .ixt-BlockContent10-br, .ixt-BlockContent10-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent10-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent10-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent10-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent10-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent10-tc, .ixt-BlockContent10-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent10-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent10-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent10-cr, .ixt-BlockContent10-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent10-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent10-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent10-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent11, .ixt-BlockContent11-body { zoom:1; }
+.ixt-BlockContent11-body { position:static; }
+.ixt-BlockContent11-tr, .ixt-BlockContent11-tl, .ixt-BlockContent11-br, .ixt-BlockContent11-bl, .ixt-BlockContent11-tc, .ixt-BlockContent11-bc, .ixt-BlockContent11-cr, .ixt-BlockContent11-cl { font-size: 1px; background: none; }
+.ixt-BlockContent11-tr, .ixt-BlockContent11-tl, .ixt-BlockContent11-br, .ixt-BlockContent11-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent11-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent11-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent11-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent11-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent11-tc, .ixt-BlockContent11-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent11-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent11-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent11-cr, .ixt-BlockContent11-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent11-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent11-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent11-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent12, .ixt-BlockContent12-body { zoom:1; }
+.ixt-BlockContent12-body { position:static; }
+.ixt-BlockContent12-tr, .ixt-BlockContent12-tl, .ixt-BlockContent12-br, .ixt-BlockContent12-bl, .ixt-BlockContent12-tc, .ixt-BlockContent12-bc, .ixt-BlockContent12-cr, .ixt-BlockContent12-cl { font-size: 1px; background: none; }
+.ixt-BlockContent12-tr, .ixt-BlockContent12-tl, .ixt-BlockContent12-br, .ixt-BlockContent12-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent12-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent12-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent12-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent12-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent12-tc, .ixt-BlockContent12-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent12-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent12-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent12-cr, .ixt-BlockContent12-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent12-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent12-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent12-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent999, .ixt-BlockContent999-body { zoom:1; }
+.ixt-BlockContent999-body { position:static; }
+.ixt-BlockContent999-tr, .ixt-BlockContent999-tl, .ixt-BlockContent999-br, .ixt-BlockContent999-bl, .ixt-BlockContent999-tc, .ixt-BlockContent999-bc, .ixt-BlockContent999-cr, .ixt-BlockContent999-cl { font-size: 1px; background: none; }
+.ixt-BlockContent999-tr, .ixt-BlockContent999-tl, .ixt-BlockContent999-br, .ixt-BlockContent999-bl {  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-s.png',sizingMethod='crop')");
+}
+.ixt-BlockContent999-tl { clip: rect(auto 6px 6px auto); }
+.ixt-BlockContent999-tr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto 6px 6px); }
+.ixt-BlockContent999-bl {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px 6px auto auto); }
+.ixt-BlockContent999-br {
+ top: expression(this.parentNode.offsetHeight-12+'px');
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(6px auto auto 6px); }
+.ixt-BlockContent999-tc, .ixt-BlockContent999-bc {  width: expression(this.parentNode.offsetWidth-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-h.png',sizingMethod='crop')");
+}
+.ixt-BlockContent999-tc { clip: rect(auto auto 6px auto); }
+.ixt-BlockContent999-bc {
+ top: expression(this.parentNode.offsetHeight-12+'px'); clip: rect(6px auto auto auto); }
+.ixt-BlockContent999-cr, .ixt-BlockContent999-cl {  height: expression(this.parentNode.offsetHeight-12+'px');
+ behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContent-v.png',sizingMethod='crop')");
+}
+.ixt-BlockContent999-cr {
+ left: expression(this.parentNode.offsetWidth-12+'px'); clip: rect(auto auto auto 6px); }
+.ixt-BlockContent999-cl { clip: rect(auto 6px auto auto); }
+.ixt-BlockContent999-cc { font-size: 1px;  width: expression(this.parentNode.offsetWidth-12+'px');
+ height: expression(this.parentNode.offsetHeight-12+'px');
+}
+.ixt-BlockContent-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent1-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent2-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent3-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent4-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent5-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent6-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent7-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent8-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent9-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent10-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent11-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent12-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+.ixt-BlockContent999-body ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/BlockContentBullets.png',sizingMethod='crop')");
+}
+/* end Box, BlockContent */
+
+/* begin Box, Post */
+.ixt-Post, .ixt-Post-body { zoom:1; }
+.ixt-Post-body { position:static; }
+/* end Box, Post */
+
+/* begin PostContent */
+h1 { margin: 0.67em 0; }
+h2 { margin: 0.8em 0; }
+h3 { margin: 1em 0; }
+h4 { margin: 1.25em 0; }
+h5 { margin: 1.67em 0; }
+h6 { margin: 2.33em 0; }
+/* end PostContent */
+
+/* begin PostBullets */
+.ixt-Post ul li, .ixt-Post ol ul li { height:1%; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/PostBullets.png',sizingMethod='crop')");
+}
+.ixt-Post ul ol li { background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="");
+}
+/* end PostBullets */
+
+/* begin PostQuote */
+blockquote, .ixt-PostContent blockquote { height:1%; background-image: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/PostQuote.png',sizingMethod='crop')");
+}
+/* end PostQuote */
+
+/* begin Button */
+.ixt-button-wrapper, .ixt-button-wrapper .l, .ixt-button-wrapper .r { font-size: 1px; }
+.ixt-button-wrapper .ixt-button { float:left; }
+.ixt-button-wrapper .l, .ixt-button-wrapper .r { background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/Button.png',sizingMethod='crop')");
+}
+.ixt-button-wrapper .r {
+ left: expression(this.parentNode.offsetWidth-409+'px'); clip: rect(auto auto auto 401px); }
+.ixt-button-wrapper .l {  width: expression(this.parentNode.offsetWidth-8+'px');
+}
+/* end Button */
+
+/* begin Footer */
+#ixt-Footer .ixt-Footer-background {
+ top: expression(this.parentNode.offsetHeight-'600px'); /* top: expression(this.parentNode.offsetHeight-150+'px'); */ background: none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/Footer.png',sizingMethod='crop')");
+zoom: 1; font-size:1px; }
+.ixt-rss-tag-icon { zoom:1; font-size:1px; background:none;  behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + GetStyleUrl()+"../img/rssIcon.png',sizingMethod='crop')");
+}
+/* end Footer */
+
+
+
+div.ixt-logoban1 { position: absolute; }
+#ixt-Footer .ixt-Footer-block { width:24.9%; float:left; }

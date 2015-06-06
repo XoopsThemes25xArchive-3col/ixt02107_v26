@@ -1,0 +1,59 @@
+IXThemes ChangeLog
+
+== IXThemes ixt02107 ==
+
+===2010-03-29 : 2.6 ===
+
+Improved:
+- Possibility of switching-off style for blocks in extended footer is added.
+- Possibility of switching-off style for blocks in sidebars is added.
+- Preheader structure is optimized
+
+Bugs fixed:
+- Small bugs in control zones for IE are fixed
+- Small bugs in expanded header for IE are fixed
+- Sidebars width bugs for IE are fixed
+- Blocks width in expanded footer bugs for IE are fixed
+
+===2010-03-01 : 2.5 ===
+
+Improved:
+- Possibility of concatenation of left and right columns is added.
+- jQuery 1.4.2 ready and included.
+
+===2010-02-26 : 2.4 ===
+
+Improved:
+- Possibility of switching-off for extended header is added.
+- Possibility of switching-off for RSS link in header is added.
+- Possibility of switching-off for preheader is added.
+- Cursor:pointer for buttons is added.
+
+===2010-02-24 : 2.3 ===
+
+Improved:
+- Possibility of switching-off for footer is added.
+- Possibility of switching-off for control zones is added.
+- Possibility of switching-off for slides zone is added.
+- Possibility of columns layout settings is added ( LRC, LCR, CLR).
+- The maximum height of a footer background is increased up to 600px.
+- jQuery 1.4.1 ready and included.
+
+===2009-12-20 : 2.2 ===
+
+Improved:
+- Footer blocks code is optimized
+- Two new control zone are added
+
+===2009-12-15 : 2.1 ===
+
+Improved:
+- Loading jQuery from CMS core (for XOOPS 2.4.x) is added
+- The self-adjusted menubar is added
+- New extended footer system blocks loader
+- Now users can change the theme name
+- slides.css included in slides.html template
+
+===2009-11-09 : 1.0 ===
+
+The first public release of a ixt02107 XOOPS theme
